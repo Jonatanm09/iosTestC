@@ -17,6 +17,7 @@
 		D40BBFF12824590600AE2758 /* iosTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40BBFF02824590600AE2758 /* iosTestTests.swift */; };
 		D40BBFFB2824590600AE2758 /* iosTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40BBFFA2824590600AE2758 /* iosTestUITests.swift */; };
 		D40BBFFD2824590600AE2758 /* iosTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40BBFFC2824590600AE2758 /* iosTestUITestsLaunchTests.swift */; };
+		D40BC00E2824645B00AE2758 /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40BC00D2824645B00AE2758 /* UsersTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		D40BBFF62824590600AE2758 /* iosTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iosTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D40BBFFA2824590600AE2758 /* iosTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosTestUITests.swift; sourceTree = "<group>"; };
 		D40BBFFC2824590600AE2758 /* iosTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D40BC00D2824645B00AE2758 /* UsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,10 @@
 		D40BBFD52824590500AE2758 /* iosTest */ = {
 			isa = PBXGroup;
 			children = (
+				D40BC00C28245C5200AE2758 /* Utils */,
+				D40BC00B28245C4800AE2758 /* Models */,
+				D40BC00A28245C4100AE2758 /* Controller */,
+				D40BC00928245C3800AE2758 /* View */,
 				D40BBFD62824590500AE2758 /* AppDelegate.swift */,
 				D40BBFD82824590500AE2758 /* SceneDelegate.swift */,
 				D40BBFDA2824590500AE2758 /* ViewController.swift */,
@@ -128,6 +134,35 @@
 				D40BBFFC2824590600AE2758 /* iosTestUITestsLaunchTests.swift */,
 			);
 			path = iosTestUITests;
+			sourceTree = "<group>";
+		};
+		D40BC00928245C3800AE2758 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D40BC00A28245C4100AE2758 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D40BC00D2824645B00AE2758 /* UsersTableViewCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D40BC00B28245C4800AE2758 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D40BC00C28245C5200AE2758 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +300,7 @@
 				D40BBFD72824590500AE2758 /* AppDelegate.swift in Sources */,
 				D40BBFD92824590500AE2758 /* SceneDelegate.swift in Sources */,
 				D40BBFE12824590500AE2758 /* iosTest.xcdatamodeld in Sources */,
+				D40BC00E2824645B00AE2758 /* UsersTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
