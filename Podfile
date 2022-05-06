@@ -6,6 +6,8 @@ target 'iosTest' do
   use_frameworks!
 
   # Pods for iosTest
+ pod 'ProgressHUD'
+ pod 'Alamofire', '~> 5.2'
 
   target 'iosTestTests' do
     inherit! :search_paths
