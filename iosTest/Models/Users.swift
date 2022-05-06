@@ -8,11 +8,13 @@
 import UIKit
 
 struct Users: Decodable {
-    var name: String
-    var phoneNumber: String
-    var email: String
+    var id: Int?
+    var name: String?
+    var phoneNumber: String?
+    var email: String?
     
     enum CodingKeys: String, CodingKey {
+        case id = "id"
       case name = "name"
       case phoneNumber = "phone"
       case email = "email"

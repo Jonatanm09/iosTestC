@@ -22,6 +22,8 @@
 		D40BC00E2824645B00AE2758 /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40BC00D2824645B00AE2758 /* UsersTableViewCell.swift */; };
 		D40BC01028246B8300AE2758 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40BC00F28246B8300AE2758 /* Users.swift */; };
 		D40BC01228246CEC00AE2758 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40BC01128246CEC00AE2758 /* Posts.swift */; };
+		D4C1A2162825994400D2D2A7 /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C1A2152825994400D2D2A7 /* PostsViewController.swift */; };
+		D4C1A2182825A04D00D2D2A7 /* PostsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C1A2172825A04D00D2D2A7 /* PostsTableViewCell.swift */; };
 		E0585DF8C10C185DA3ACC993 /* Pods_iosTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41CE05572B78FC4DD5C886FC /* Pods_iosTestTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +69,8 @@
 		D40BC00D2824645B00AE2758 /* UsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
 		D40BC00F28246B8300AE2758 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		D40BC01128246CEC00AE2758 /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
+		D4C1A2152825994400D2D2A7 /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
+		D4C1A2172825A04D00D2D2A7 /* PostsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsTableViewCell.swift; sourceTree = "<group>"; };
 		D5FEA46FB63F84FD40C1A078 /* Pods-iosTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosTestTests.debug.xcconfig"; path = "Target Support Files/Pods-iosTestTests/Pods-iosTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E2811AC8FF3A60B4F93FF3B8 /* Pods-iosTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosTest.debug.xcconfig"; path = "Target Support Files/Pods-iosTest/Pods-iosTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,7 +151,7 @@
 		D40BBFD52824590500AE2758 /* iosTest */ = {
 			isa = PBXGroup;
 			children = (
-				D452A90B2824AA69002AC3CD /* Core */,
+				D4C1A2192825A05600D2D2A7 /* Cells */,
 				D40BC00C28245C5200AE2758 /* Utils */,
 				D40BC00B28245C4800AE2758 /* Models */,
 				D40BC00A28245C4100AE2758 /* Controller */,
@@ -191,7 +195,7 @@
 		D40BC00A28245C4100AE2758 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D40BC00D2824645B00AE2758 /* UsersTableViewCell.swift */,
+				D4C1A2152825994400D2D2A7 /* PostsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -212,11 +216,13 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		D452A90B2824AA69002AC3CD /* Core */ = {
+		D4C1A2192825A05600D2D2A7 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				D4C1A2172825A04D00D2D2A7 /* PostsTableViewCell.swift */,
+				D40BC00D2824645B00AE2758 /* UsersTableViewCell.swift */,
 			);
-			path = Core;
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -458,11 +464,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4C1A2162825994400D2D2A7 /* PostsViewController.swift in Sources */,
 				D40BBFDB2824590500AE2758 /* ViewController.swift in Sources */,
 				D40BC01228246CEC00AE2758 /* Posts.swift in Sources */,
 				D40BBFD72824590500AE2758 /* AppDelegate.swift in Sources */,
 				D40BBFD92824590500AE2758 /* SceneDelegate.swift in Sources */,
 				D40BBFE12824590500AE2758 /* iosTest.xcdatamodeld in Sources */,
+				D4C1A2182825A04D00D2D2A7 /* PostsTableViewCell.swift in Sources */,
 				D40BC01028246B8300AE2758 /* Users.swift in Sources */,
 				D40BC00E2824645B00AE2758 /* UsersTableViewCell.swift in Sources */,
 			);
