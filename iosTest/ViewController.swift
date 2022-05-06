@@ -43,10 +43,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        <#code#>
-    }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "users_info_cell") as! UsersTableViewCell
         cell.titleLbl.text = filteredUsers[indexPath.row].name
