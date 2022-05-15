@@ -7,11 +7,13 @@
 
 import UIKit
 
-struct Posts: Decodable {
+struct Post: Decodable {
+    var userId: Int
     var title: String
     var description : String
     
     enum CodingKeys: String, CodingKey {
+    case userId = "userId"
     case title = "title"
     case  description = "body"
     }

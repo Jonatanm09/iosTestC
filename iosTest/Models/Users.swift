@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct Users: Decodable {
+struct User: Decodable {
     var id: Int?
     var name: String?
     var phoneNumber: String?

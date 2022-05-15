@@ -11,8 +11,8 @@ import Alamofire
 
 class PostsViewController:  UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var posts: [Posts] = []
-    var userID: Int = 0
+    var posts: [Post] = []
+    var userID: Int64 = 0
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -34,7 +34,7 @@ class PostsViewController:  UIViewController, UITableViewDelegate, UITableViewDa
         return cell
     }
     
-    func getPostsForUser(userID: Int){
+    func getPostsForUser(userID: Int64){
         
         ProgressHUD.show()
         
@@ -45,7 +45,7 @@ class PostsViewController:  UIViewController, UITableViewDelegate, UITableViewDa
                 case .success( _):
                     
                     do {
-                        self.posts = try JSONDecoder().decode([Posts].self, from: response.data!)
+                        self.posts = try JSONDecoder().decode([Post].self, from: response.data!)
                         
                         self.tableView.reloadData()
                         
