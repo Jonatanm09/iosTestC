@@ -10,12 +10,12 @@ import UIKit
 struct Post: Decodable {
     var userId: Int
     var title: String
-    var description : String
+    var body : String
     
     enum CodingKeys: String, CodingKey {
     case userId = "userId"
     case title = "title"
-    case  description = "body"
+    case  body = "body"
     }
 
 }
